@@ -74,5 +74,7 @@ val trainingSummary = lrModel.summary
 
 // Show the residuals, the RMSE, the MSE, and the R^2 Values.
 trainingSummary.residuals.show()
-
+println(s"RMSE: ${trainingSummary.rootMeanSquaredError}")
+println(s"MSE: ${trainingSummary.meanSquaredError}")
+println(s"r2: ${trainingSummary.r2}")
 
