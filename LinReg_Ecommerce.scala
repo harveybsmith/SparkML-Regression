@@ -31,9 +31,8 @@ for(ind <- Range(columns.length)){
 //// Setting Up DataFrame for Machine Learning ////
 //////////////////////////////////////////////////
 
-// A few things we need to do before Spark can accept the data!
-// It needs to be in the form of two columns
-// ("label","features")
+// A few things we need to do before Spark can accept the data
+// It needs to be in the form of two columns, ("label","features")
 
 // Import VectorAssembler and Vectors
 import org.apache.spark.ml.feature.VectorAssembler
